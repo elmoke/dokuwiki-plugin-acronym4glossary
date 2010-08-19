@@ -1,0 +1,7 @@
+base   acronym4glossary
+author Michael Schuh
+email  mike.schuh@gmx.at
+date   2010-06-16
+name   acronym4glossary plugin (syntax component)
+desc   This plugin uses the acronyms to build a glossary
+url    http://blog.imho.at/20100819/artikel/dokuwiki-plugin-acronym4glossary
