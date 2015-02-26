@@ -57,11 +57,11 @@ class syntax_plugin_acronym4glossary extends DokuWiki_Syntax_Plugin {
 		function render($mode, &$renderer, $data) {
 			if($mode != 'xhtml') return false;
 			$renderer->doc .= "<ul>\n";
-			$actLetter = "a";
+			$actLetter = "!";
 			foreach($this->acrData as $key => $value) {
 				if(strtolower($key{0}) != $actLetter) {
 					$actLetter = strtolower($key{0});
-					$renderer->doc .= "<br />";
+					$renderer->doc .= "</ul><H2>".strtoupper($actLetter)."</h2><br /><ul>";
 				}
 				$renderer->doc .= "<li>\n".$key." - " . $value."</li>";
 			}
